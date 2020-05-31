@@ -1,0 +1,530 @@
+{
+    "system": {
+        "customer": 2,
+        "qcom_acm": "/dev/ttyGS0"
+    },
+    "boardid":{
+        "S98609AA1":{
+            "4":"S98609BA1"
+        },
+        "S98607FA1":{
+            "4":"S98607YA1"
+        },
+        "S98607HA1":{
+            "4":"S98607XA1"
+        }
+    },
+    "sensor": {
+    },
+    "batteryinfo": {
+        "health": "/sys/class/power_supply/battery/health",
+        "status": "/sys/class/power_supply/battery/status",
+        "voltage_now": "/sys/class/power_supply/battery/batt_vol",
+        "capacity": "/sys/class/power_supply/battery/capacity",
+        "current_now": "/sys/class/power_supply/battery/current_now",
+        "temp": "/sys/class/power_supply/battery/batt_temp",
+        "ac_online": "/sys/class/power_supply/ac/online",
+        "usb_online": "/sys/class/power_supply/usb/online",
+        "impedance": "/sys/class/power_supply/battery/resistance_id"
+    },
+    "ata": {
+    },
+    "flashLight": {
+        "hot": {
+            "file": "/sys/class/flashlightdrv/kd_camera_flashlight/flash1",
+            "open": "4",
+            "close": "-1",
+            "needSwitch": false
+        },
+        "cold": {
+            "file": "/sys/class/flashlightdrv/kd_camera_flashlight/flash2",
+            "open": "4",
+            "close": "-1",
+            "needSwitch": false
+        },
+        "switch": {
+            "file": "/sys/class/leds/led:switch/brightness",
+            "open": "1",
+            "close": "0"
+        },
+        "front": {
+            "file": "/sys/class/leds/led:flash_0/brightness",
+            "open": "1",
+            "close": "0",
+            "needSwitch": false
+        }
+    },
+    "touchext": {
+        "input_dir": "/vendor/etc/",
+        "output_dir": "/sdcard/",
+        "libopenshort_file": "/vendor/lib64/libopenshort.so",
+        "gt915l_openshort_device": "/proc/gmnode00000100",
+        "ctp_openshort_proc": "/proc/touchscreen/ctp_openshort_test",
+        "S98506": {
+            "libopenshort_file": "/vendor/lib/libopenshort.so",
+            "gt915l_openshort_device": "/sys/class/touchscreen/gmnode"
+        },
+        "S98507": {
+            "libopenshort_file": "/vendor/lib/libopenshort.so",
+            "gt915l_openshort_device": "/sys/class/touchscreen/gmnode"
+        }
+    },
+    "hardwareinfo": {
+        "cid_tab": {
+            "513758534142": "KMQ7X000SA-B315-Samsung",
+            "513732534d42": "KMQ72000SM_B316-Samsung",
+            "514e31534d42": "KMQN1000SM-B316-Samsung",
+            "523758314d42": "KMR7X0001M-B511-Samsung",
+            "513858534142": "KMQ8X000SA-B414-Samsung",
+            "513832534d42": "KMQ82000SA-B418-Samsung",
+            "514531334d42": "KMQE10013M-B318-Samsung",
+            "523832314d42": "KMR820001M-B609-Samsung",
+            "523331314d42": "KMR310001M-B611-Samsung",
+            "523331424d42": "KMR31000BM-B611-Samsung",
+            "513231334D42": "KMQ210013M-B615-Samsung",
+            "514536334d42": "KMQE60013M-B318-Samsung",
+            "474436424d42": "KMGD6001BM-B421-Samsung",
+            "475836424d42": "KMGX6001BM-B514-Samsung",
+            "524836344d42": "KMRH60014M-B614-Samsung",
+            "524836344142": "KMRH60014A-B614-Samsung",
+            "464536324d42": "KMFE60012M-B214-Samsung",
+            "464e36324d42": "KMFN60012M-B214-Samsung",
+            "334836434142": "KM3H6001CA-B515-Samsung",
+            "335636434D42": "KM3V6001CM-B705-Samsung",
+            "483847316505": "H9TQ64ABJTMCUR-KUM-Hynix",
+            "483847346132": "H9TQ64A8GTDCUR-KUM-Hynix",
+            "483847326404": "H9TQ65A8GTMCUR-Hynix",
+            "484147326505": "H9TQ17ADFTMCUR-Hynix",
+            "484147346132": "H9TQ17ABJTBCUR-Hynix",
+            "484247346132": "H9TQ26ADFTBCUR-Hynix",
+            "50314a39354b": "MT29TZZZ8D5BKFAH-125-Micron",
+            "51334a393652": "MT29TZZZ5D6EKFRL-107-Micron",
+            "52314a39364e": "MT29TZZZ5D6YKFAH-125-Micron",
+            "53304a394237": "MT29TZZZ7D7DKLAH-107-Micron",
+            "53304a394137": "MT29TZZZ5D7DKFRL-107-Micron",
+            "303038473730": "TYD0GH121661RA-Toshiba",
+            "303136473730": "TYE0HH221657RA-Toshiba",
+            "303136473330": "TYE0HH221668RA-Toshiba",
+            "303136473332": "TYE0HH231659RA-Toshiba",
+            "303332473332": "TYE0IH231658RA-Toshiba",
+            "563130303038": "8EMCP08_EL3CV100_C06-Kingston",
+            "454838454538": "08EMCP08-NL3DT227-A01-Kingston",
+            "53304a393759": "MT29VZZZ7D7DQKWL-053 W.97Y",
+            "444836444142": "KMDH6001DA-B422",
+            "444436384d42": "KMDD60018M-B320",
+            "484347386134": "H9HP52ACPMMDAR",
+            "684445615033": "H9HP16ACPMMDAR-KMM",
+            "445636444d42": "KMDV6001DM-B620"
+        },
+        "flash_name": "/sys/class/mmc_host/mmc0/mmc0:0001/flash_name",
+        "fw_version_file": "/sys/class/mmc_host/mmc0/mmc0:0001/fwrev",
+        "cid_file": "/sys/class/mmc_host/mmc0/mmc0:0001/cid",
+        "serial_num_file": "/proc/serial_num",
+        "emmcid_prop": "ro.serialno",
+        "chip_id": "ro.boot.chipid",
+        "tp_lockdown_node": "/proc/touchscreen/lockdown_info",
+        "sec_dat_node": "/proc/secboot_fuse_reg",
+        "flash_life_a": "sys/class/block/mmcblk0/device/life_time_est_typ_a",
+        "flash_life_b": "sys/class/block/mmcblk0/device/life_time_est_typ_b",
+        "S98506": {
+        },
+        "S98507": {
+        }
+    },
+    "driver_node": {
+        "fuse_reg": "/proc/secboot_fuse_reg",
+        "sim_tray": "/proc/sd_tray_gpio_value",
+        "rtc_node": "/sys/devices/platform/mt-rtc/rtc/rtc0/dis_rtc",
+        "sar_wifi_status": "/sys/class/sar/wifi_status",
+        "sar_tel_status": "/sys/class/sar/tel_status",
+        "flash_light_cali": "/persist/camera/flash_result",
+        "camera_cali": "/persist/camera/calib_result"
+    },
+    "light": {
+        "red_led": {
+            "file": "/sys/class/leds/red/mx-brightness",
+            "open": "255",
+            "close": "0",
+            "needSwitch": false
+        },
+        "blue_led": {
+            "file": "/sys/class/leds/blue/brightness",
+            "open": "255",
+            "close": "0",
+            "needSwitch": false
+        },
+        "green_led": {
+            "file": "/sys/class/leds/green/brightness",
+            "open": "255",
+            "close": "0",
+            "needSwitch": false
+        },
+        "white_led": {
+            "file": "/sys/class/leds/red/brightness",
+            "open": "255",
+            "close": "0",
+            "needSwitch": false
+        }
+    },
+    "smartpa": {
+        "spk_cali": "/sys/devices/system/opsl-cali/opsl-cali0/pass",
+        "spk_Impedance": "/persist/crus_spk_cali_data.txt"
+    },
+    "systemInfo": {
+        "camera_flag": "/data/misc/camera/dualcam_flag.bin"
+    },
+    "factorynv": {
+        "flag_runin": {
+            "base": 0,
+            "offset": 4
+        },
+        "mode_nv": [
+            {
+                "base": 6855,
+                "offset": 0,
+                "mode": 1
+            },
+            {
+                "base": 6855,
+                "offset": 1,
+                "mode": 3
+            },
+            {
+                "base": 6855,
+                "offset": 3,
+                "mode": 0
+
+            },
+            {
+                "base": 6855,
+                "offset": 2,
+                "mode": 9
+            },
+            {
+                "base": 6855,
+                "offset": 7,
+                "mode": 2
+            },
+            {
+                "base": 6855,
+                "offset": 10,
+                "mode": 10
+            },
+            {
+                "base": 6855,
+                "offset": 8,
+                "mode": 7
+            },
+            {
+                "base": 6855,
+                "offset": 5,
+                "mode": 5
+            },
+            {
+                "base": 6855,
+                "offset": 6,
+                "mode": 6
+            },
+            {
+                "base": 6855,
+                "offset": 9,
+                "mode": 11
+            }
+        ],
+        "flag_mmi_current_bit": {
+            "base": 0,
+            "offset": 855
+        },
+        "flag_pcba_current_bit": {
+            "base": 0,
+            "offset": 854
+        },
+        "flag_optical_calibration": {
+            "base": 0,
+            "offset": -1
+        },
+        "flag_proximity_calibration": {
+            "base": 0,
+            "offset": -1
+        },
+        "flag_GyroAcc_calibration": {
+            "base": 0,
+            "offset": -1
+        },
+        "gsm_cali": {
+            "base": 6853,
+            "GSM_FLAG_POSITION": 8,
+            "GSM_FLAG_POS_MULTIPLE": 10,
+            "TD_FLAG_POSITION": 12,
+            "TD_FLAG_POS_MULTIPLE": 14,
+            "W_FLAG_POSITION": 16,
+            "W_FLAG_POS_MULTIPLE": 18,
+            "CDMA2K_FLAG_POSITION": 20,
+            "CDMA2K_FLAG_POS_MULTIPLE": 22,
+            "TDD_FLAG_POSITION": 24,
+            "TDD_FLAG_POS_MULTIPLE": 26,
+            "FDD_FLAG_POSITION": 28,
+            "FDD_FLAG_POS_MULTIPLE": 30
+        },
+        "qcom": {
+            "mode_nv": [
+                {
+                    "base": 6855,
+                    "offset": 0,
+                    "mode": 1
+                },
+                {
+                    "base": 6855,
+                    "offset": 1,
+                    "mode": 3
+                },
+                {
+                    "base": 6855,
+                    "offset": 2,
+                    "mode": 9
+                },
+                {
+                    "base": 6855,
+                    "offset": 2,
+                    "mode": 17
+                },
+                {
+                    "base": 6855,
+                    "offset": 5,
+                    "mode": 5
+                },
+                {
+                    "base": 6855,
+                    "offset": 6,
+                    "mode": 4
+                },
+                {
+                    "base": 6855,
+                    "offset": 7,
+                    "mode": 2
+                },
+                {
+                    "base": 6855,
+                    "offset": 8,
+                    "mode": 6
+                },
+                {
+                    "base": 6855,
+                    "offset": 9,
+                    "mode": 11
+                },
+                {
+                    "base": 6855,
+                    "offset": 11,
+                    "mode": 10
+                },
+                {
+                    "base": 6855,
+                    "offset": 12,
+                    "mode": 18
+                },
+                {
+                    "base": 6855,
+                    "offset": 13,
+                    "mode": 19
+                },
+                {
+                    "base": 6855,
+                    "offset": 14,
+                    "mode": 0
+
+                },
+                {
+                    "base": 6855,
+                    "offset": 15,
+                    "mode": 20
+                },
+                {
+                    "base": 6855,
+                    "offset": 16,
+                    "mode": 7
+                },
+                {
+                    "base": 6855,
+                    "offset": 17,
+                    "mode": 8
+                }
+            ],
+            "flag_runin": {
+                "base": 6857,
+                "offset": 0
+
+            },
+            "flag_mmi_current_bit": {
+                "base": 0,
+                "offset": -1
+            },
+            "flag_pcba_current_bit": {
+                "base": 0,
+                "offset": -1
+            },
+            "flag_optical_calibration": {
+                "base": 6854,
+                "offset": 64
+            },
+            "flag_proximity_calibration": {
+                "base": 6854,
+                "offset": 48
+            },
+            "flag_GyroAcc_calibration": {
+                "base": 6854,
+                "offset": 0
+
+            },
+            "gsm_cali": {
+                "base": 6853,
+                "GSM_FLAG_POSITION": 8,
+                "GSM_FLAG_POS_MULTIPLE": 10,
+                "TD_FLAG_POSITION": 12,
+                "TD_FLAG_POS_MULTIPLE": 14,
+                "W_FLAG_POSITION": 16,
+                "W_FLAG_POS_MULTIPLE": 18,
+                "CDMA2K_FLAG_POSITION": 20,
+                "CDMA2K_FLAG_POS_MULTIPLE": 22,
+                "TDD_FLAG_POSITION": 24,
+                "TDD_FLAG_POS_MULTIPLE": 26,
+                "FDD_FLAG_POSITION": 28,
+                "FDD_FLAG_POS_MULTIPLE": 30
+            },
+            "flag_custornv": {
+                "base": 6856,
+                "offset": 0
+
+            }
+        },
+        "mtk": {
+            "flag_runin": {
+                "base": 0,
+                "offset": 4
+            },
+            "mode_nv": [
+                {
+                    "base": 0,
+                    "offset": 0,
+                    "mode": 1
+                },
+                {
+                    "base": 0,
+                    "offset": 1,
+                    "mode": 3
+                },
+                {
+                    "base": 0,
+                    "offset": 2,
+                    "mode": 17
+                },
+                {
+                    "base": 0,
+                    "offset": 241,
+                    "mode": 5
+                },
+                {
+                    "base": 0,
+                    "offset": 860,
+                    "mode": 2
+                },
+                {
+                    "base": 0,
+                    "offset": 861,
+                    "mode": 6
+                },
+                {
+                    "base": 0,
+                    "offset": 862,
+                    "mode": 4
+                },
+                {
+                    "base": 0,
+                    "offset": 868,
+                    "mode": 11
+                },
+                {
+                    "base": 0,
+                    "offset": 904,
+                    "mode": 10
+                },
+                {
+                    "base": 0,
+                    "offset": 905,
+                    "mode": 18
+                },
+                {
+                    "base": 0,
+                    "offset": 906,
+                    "mode": 19
+                },
+                {
+                    "base": 0,
+                    "offset": 907,
+                    "mode": 0
+
+                },
+                {
+                    "base": 0,
+                    "offset": 908,
+                    "mode": 20
+                },
+                {
+                    "base": 0,
+                    "offset": 909,
+                    "mode": 7
+                },
+                {
+                    "base": 0,
+                    "offset": 910,
+                    "mode": 8
+                },
+				{
+                    "base": 0,
+                    "offset": 3,
+                    "mode": 9
+                }
+            ],
+            "flag_mmi_current_bit": {
+                "base": 0,
+                "offset": 855
+            },
+            "flag_pcba_current_bit": {
+                "base": 0,
+                "offset": 854
+            },
+            "flag_optical_calibration": {
+                "base": 0,
+                "offset": -1
+            },
+            "flag_proximity_calibration": {
+                "base": 0,
+                "offset": -1
+            },
+            "flag_GyroAcc_calibration": {
+                "base": 0,
+                "offset": -1
+            },
+            "gsm_cali": {
+                "base": -1,
+                "GSM_FLAG_POSITION": -1,
+                "GSM_FLAG_POS_MULTIPLE": -1,
+                "TD_FLAG_POSITION": -1,
+                "TD_FLAG_POS_MULTIPLE": -1,
+                "W_FLAG_POSITION": -1,
+                "W_FLAG_POS_MULTIPLE": -1,
+                "CDMA2K_FLAG_POSITION": -1,
+                "CDMA2K_FLAG_POS_MULTIPLE": -1,
+                "TDD_FLAG_POSITION": -1,
+                "TDD_FLAG_POS_MULTIPLE": -1,
+                "FDD_FLAG_POSITION": -1,
+                "FDD_FLAG_POS_MULTIPLE": -1
+            },
+            "flag_custornv": {
+                "base": 1,
+                "offset": 0
+
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+  "itemConfig": [
+    {
+      "showName": "Optical",
+      "action": "com.mmigroup.action.OPTICAL",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "lux_std": 297,
+        "lux_pet": 99,
+        "is_check_range": true,
+        "calibration_scheme": "xiaomi_mtk"
+      }
+    },
+    {
+      "showName": "Optical_c",
+      "action": "com.mmigroup.action.OPTICAL",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "lux_std": 297,
+        "lux_pet": 99,
+        "is_check_range": false,
+        "do_calibration": true,
+        "calibration_scheme": "oppo_mtk"
+      }
+    },
+    {
+      "showName": "Accelerometer_C",
+      "action": "com.mmigroup.action.ACCELEROMETER",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "support_calibrate": true,
+        "support_axialresult": false,
+        "support_angle45": false,
+        "support_angleneg45": false,
+        "data_suffix_rate": 1000,
+        "gravity_45_degree_x": -4.9000,
+        "gravity_45_degree_y": 4.9000,
+        "gravity_45_degree_z": 6.9340,
+        "gravity_45_degree_tolerance": 0.71,
+        "gravity_axial_limit": 1.5,
+        "is_auto_calibrate": true,
+        "calibration_scheme": "xiaomi_mtk"
+      }
+    },
+    {
+      "showName": "TpOpenShort",
+      "action": "com.mmigroup.action.TPOPENSHORT",
+      "support": true,
+      "automatic": true
+    }
+  ]
+}

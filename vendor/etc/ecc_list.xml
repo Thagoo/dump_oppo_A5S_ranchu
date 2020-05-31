@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EccTable>
+    <!--
+        The attribute definition for tag EccEntry:
+        - Ecc: the emergnecy number
+        - Category: the service category (From 3GPP TS24.008)
+            - Bit 1 (1): Police
+            - Bit 2 (2): Ambulance
+            - Bit 3 (4): Fire Brigade
+            - Bit 4 (8): Marine Guard
+            - Bit 5 (16): Mountain Rescue
+            - Bit 6 (32): Manually initiated eCall
+            - Bit 7 (64): Automatically initiated eCall
+            - Bit 8 (128): is spare and set to "0"
+        - Condition: there are following values:
+            - 0: ecc only when no sim
+            - 1: ecc always
+            - 2: MMI will show ecc but send to nw as normal call
+    -->
+
+    <!--#ifdef VENDOR_EDIT-->
+    <!-- Tengju.Cui@PSW.NW.IMS.1915028,2019/04/11 -->
+    <!-- Modify for the new requirements about water/electricity emergency number
+       - Change 153(Water)/154(Electricty) to 1442(added in ecc_list.xml) -->
+    <EccEntry Ecc="1442" Category="0" Condition="1" Plmn = "422 FFF" />
+    <!-- #endif VENDOR_EDIT -->
+
+    <!--#ifdef VENDOR_EDIT-->
+    <!-- Tengju.Cui@PSW.NW.IMS.1793408/1811646, 2019/01/19-->
+    <!-- Add for NZ 2Degree emergency number -->
+    <EccEntry Ecc="119" Category="7" Condition="1" Plmn = "530 24" />
+    <EccEntry Ecc="999" Category="7" Condition="1" Plmn = "530 24" />
+    <!-- #endif VENDOR_EDIT -->
+
+    <!-- #ifdef VENDOR_EDIT -->
+    <!-- Tengju.Cui@PSW.NW.IMS.1811647,2019/02/13 -->
+    <!-- Add for NZ emergency number 000 -->
+    <EccEntry Ecc="000" Category="0" Condition="1" Plmn = "530 FFF" />
+    <!-- #endif VENDOR_EDIT -->
+
+    <!--#ifdef VENDOR_EDIT-->
+    <!-- Yisheng.Wu@NW.CALL.1128114, 2017/10/19-->
+    <!-- Shenghua.Qin@PSW.NW.CALL.1204811, 2018/01/08-->
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn = "525 03" />
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn = "525 05" />
+    <!-- add for dialing 999 as sepecial emergency call for 47003-->
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn = "470 FFF" />
+    <!-- #endif //VENDOR_EDIT -->
+    <!-- Add for China CTA -->
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn = "460 FFF" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "460 FFF" />
+    <EccEntry Ecc="120" Category="0" Condition="2" Plmn = "460 FFF" />
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn = "460 FFF" />
+    <!-- Support dial 999 under G+N/A case because CT network don't support
+         dial 999 without no CT SIM.
+    -->
+    <!--#ifdef VENDOR_EDIT
+    Jianwe.Wang@PSW.NW.CALL 1219624, 2018.1.10, Modify for 999 Emergency call -->
+    <!-- Shenghua.Qin@PSW.NW.CALL.1250209, 2018/02/11-->
+    <!-- remove for CT SIM dont need check special ECC-->
+    <!--<EccEntry Ecc="999" Category="0" Condition="2" Plmn = "460 FFF" />-->
+    <!--#endif VENDOR_EDIT-->
+    <!-- Add for Malaysis Digi operator -->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "502 FFF" />
+
+    <!-- Add for Thailand TrueMove operator (520 00/04) -->
+    <EccEntry Ecc="112" Category="1" Condition="1" Plmn = "520 00" />
+    <EccEntry Ecc="191" Category="1" Condition="1" Plmn = "520 00" />
+    <EccEntry Ecc="911" Category="1" Condition="1" Plmn = "520 00" />
+    <EccEntry Ecc="199" Category="4" Condition="1" Plmn = "520 00" />
+    <EccEntry Ecc="1669" Category="2" Condition="1" Plmn = "520 00" />
+    <EccEntry Ecc="112" Category="1" Condition="1" Plmn = "520 04" />
+    <EccEntry Ecc="191" Category="1" Condition="1" Plmn = "520 04" />
+    <EccEntry Ecc="911" Category="1" Condition="1" Plmn = "520 04" />
+    <EccEntry Ecc="199" Category="4" Condition="1" Plmn = "520 04" />
+    <EccEntry Ecc="1669" Category="2" Condition="1" Plmn = "520 04" />
+
+    <!-- Add for Taiwan APTG operator (466 05) -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "466 05" />
+    <EccEntry Ecc="112" Category="4" Condition="1" Plmn = "466 05" />
+    <EccEntry Ecc="119" Category="2" Condition="1" Plmn = "466 05" />
+
+    <!-- Add for Taiwan CHT operator (466 92) -->
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn = "466 92" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "466 92" />
+
+    <!-- Add for Telstra operator -->
+    <EccEntry Ecc="000" Category="0" Condition="1" Plmn = "505 01" />
+    <EccEntry Ecc="000" Category="0" Condition="1" Plmn = "505 71" />
+    <EccEntry Ecc="000" Category="0" Condition="1" Plmn = "505 72" />
+
+    <!-- 3GPP 22.101 -->
+    <EccEntry Ecc="112" Category="0" Condition="1" />
+    <EccEntry Ecc="911" Category="0" Condition="1" />
+    <EccEntry Ecc="000" Category="0" Condition="0" />
+    <EccEntry Ecc="08" Category="0" Condition="0" />
+    <EccEntry Ecc="110" Category="0" Condition="0" />
+    <EccEntry Ecc="118" Category="0" Condition="0" />
+    <EccEntry Ecc="119" Category="0" Condition="0" />
+    <EccEntry Ecc="999" Category="0" Condition="0" />
+<!--#ifdef VENDOR_EDIT
+    qianli.zhou@NW.Call.1050335, 2017-07-27, Modify for Emergency call -->
+    <EccEntry Ecc="000" Category="0" Condition="1"  Plmn = "460 FFF" />
+    <EccEntry Ecc="08" Category="0" Condition="1"  Plmn = "460 FFF" />
+    <EccEntry Ecc="118" Category="0" Condition="1"  Plmn = "460 FFF" />
+    <EccEntry Ecc="999" Category="0" Condition="1"  Plmn = "460 FFF" />
+<!--#endif VENDOR_EDIT-->
+
+    <!--#ifdef VENDOR_EDIT-->
+    <!--Tengju.Cui@PSW.NW.IMS.2147282, 2019-07-29, Add Emergency numbers of UA -->
+    <EccEntry Ecc="101" Category="0" Condition="2"  Plmn = "255 FFF" />
+    <EccEntry Ecc="102" Category="0" Condition="2"  Plmn = "255 FFF" />
+    <EccEntry Ecc="103" Category="0" Condition="2"  Plmn = "255 FFF" />
+    <EccEntry Ecc="104" Category="0" Condition="2"  Plmn = "255 FFF" />
+    <!--#endif VENDOR_EDIT-->
+    <!--huangkaihui@PSW.NW.ECALL,2345050_2361188,2019/09/23-->
+    <!--Add emegrency numbers of NP: 103 197, and 197 is only emergency number of the operator:NTC Ncell-->
+    <EccEntry Ecc="100" Category="0" Condition="2" Plmn = "429 FFF" />
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn = "429 FFF" />
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn = "429 FFF" />
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn = "429 FFF" />
+
+    <EccEntry Ecc="197" Category="0" Condition="2" Plmn = "429 02" />
+    <EccEntry Ecc="197" Category="0" Condition="2" Plmn = "429 01" />
+    <!--#endif VENDOR_EDIT-->
+
+    <!-- #ifdef VENDOR_EDIT -->
+    <!-- huangkaihui@PSW.NW.ECALL.2147010,2147014, 2019-07-10 -->
+    <!-- Add for 255 Ukraine -->
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn = "255 FFF" />
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn = "255 FFF" />
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn = "255 FFF" />
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn = "255 FFF" />
+    <!-- #endif /*VENDOR_EDIT -->
+
+    <!-- #ifdef VENDOR_EDIT -->
+    <!-- huangkaihui@PSW.NW.CALL.2223321, 2019-08-07 -->
+    <!--602 Egypt-->
+    <EccEntry Ecc="121" Category="0" Condition="2" Plmn = "602 FFF" />
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn = "602 FFF" />
+    <EccEntry Ecc="123" Category="0" Condition="2" Plmn = "602 FFF" />
+    <EccEntry Ecc="126" Category="0" Condition="2" Plmn = "602 FFF" />
+    <EccEntry Ecc="128" Category="0" Condition="2" Plmn = "602 FFF" />
+    <EccEntry Ecc="129" Category="0" Condition="2" Plmn = "602 FFF" />
+    <EccEntry Ecc="180" Category="0" Condition="2" Plmn = "602 FFF" />
+    <!-- #endif /*VENDOR_EDIT -->
+    <!-- #ifdef VENDOR_EDIT -->
+    <!-- huangkaihui@PSW.NW.CALL.2293895, 2019-09-07 -->
+    <!-- 420 Saudi Arabia -->
+    <EccEntry Ecc="993" Category="0" Condition="2" Plmn = "420 FFF" />
+    <EccEntry Ecc="997" Category="0" Condition="2" Plmn = "420 FFF" />
+    <EccEntry Ecc="998" Category="0" Condition="2" Plmn = "420 FFF" />
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn = "420 FFF" />
+    <!-- #endif /*VENDOR_EDIT -->
+
+    <!-- #ifdef VENDOR_EDIT -->
+    <!-- huangkaihui@PSW.NW.CALL.2335734, 2019-09-17 -->
+    <!-- 415 Lebanon  -->
+    <EccEntry Ecc="125" Category="0" Condition="1" Plmn = "415 FFF" />
+    <EccEntry Ecc="175" Category="0" Condition="1" Plmn = "415 FFF" />
+    <EccEntry Ecc="140" Category="0" Condition="1" Plmn = "415 FFF" />
+    <!-- huangkaihui@PSW.NW.CALL.2556589, 2019-11-19 -->
+    <!-- 414 Myanmar -->
+    <EccEntry Ecc="191" Category="0" Condition="2" Plmn = "414 FFF" />
+    <EccEntry Ecc="192" Category="0" Condition="2" Plmn = "414 FFF" />
+    <EccEntry Ecc="199" Category="0" Condition="2" Plmn = "414 FFF" />
+    <!-- 603 Algeria -->
+    <EccEntry Ecc="1021" Category="0" Condition="2" Plmn = "603 FFF" />
+    <EccEntry Ecc="14" Category="0" Condition="2" Plmn = "603 FFF" />
+    <EccEntry Ecc="17" Category="0" Condition="2" Plmn = "603 FFF" />
+    <EccEntry Ecc="1055" Category="0" Condition="2" Plmn = "603 FFF" />
+    <EccEntry Ecc="1548" Category="0" Condition="2" Plmn = "603 FFF" />
+    <!-- #endif /*VENDOR_EDIT -->
+
+    <!-- #ifdef VENDOR_EDIT -->
+    <!-- Tengju.Cui@PSW.NW.ECALL.2516780, 2019/11/04 -->
+    <!-- 425 Palestine  -->
+    <EccEntry Ecc="100" Category="0" Condition="2" Plmn = "425 FFF" />
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn = "425 FFF" />
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn = "425 FFF" />
+    <!-- #endif VENDOR_EDIT -->
+</EccTable>

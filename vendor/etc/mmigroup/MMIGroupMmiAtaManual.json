@@ -1,0 +1,178 @@
+{
+  "itemConfig": [
+    {
+      "showName": "KeyPad",
+      "action": "com.mmigroup.action.KEYEVENT",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "keyCode": [
+          "VOLUME_UP",
+          "VOLUME_DOWN",
+          "POWER"
+        ]
+      }
+    },
+    {
+      "showName": "LCD",
+      "action": "com.mmigroup.action.LCD",
+      "support": true,
+      "automatic": false,
+      "support_autoTest_autopass": false,
+      "paramconfig": {
+        "auto_switch": false,
+        "first_three_delay": 2000,
+        "lcd_pic": [
+          "Color_R",
+          "Color_G",
+          "Color_B",
+          "Color_W",
+          "Color_BL",
+          "cross2",
+          "Color_W"
+        ]
+      }
+    },
+    {
+      "showName": "TouchPanel",
+      "action": "com.mmigroup.action.TOUCHPANEL",
+      "support": true,
+      "automatic": false
+    },
+    {
+      "showName": "SdCard",
+      "action": "com.mmigroup.action.SDCARD",
+      "support": true,
+      "automatic": false,
+      "support_background_test": false,
+      "background_Service": "com.factory.mmigroup.item.SDCardService"
+    },
+    {
+      "showName": "MainSIMCard",
+      "action": "com.mmigroup.action.MAINSIMCARD",
+      "support": true,
+      "automatic": false,
+      "support_background_test": true,
+      "background_Service": "com.factory.mmigroup.item.MainSimCardService"
+    },
+    {
+      "showName": "SubSIMCard",
+      "action": "com.mmigroup.action.SUBSIMCARD",
+      "support": true,
+      "automatic": false,
+      "support_background_test": true,
+      "background_Service": "com.factory.mmigroup.item.SubSimCardService"
+    },
+    {
+      "showName": "GPS",
+      "action": "com.mmigroup.action.GPS",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "is_show_location": false
+      },
+      "support_background_test": true,
+      "background_Service": "com.factory.mmigroup.item.GPSService"
+    },
+    {
+      "showName": "Accelerometer",
+      "action": "com.mmigroup.action.ACCELEROMETER",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "support_calibrate": true,
+        "support_axialresult": true,
+        "support_angle45": true,
+        "support_angleneg45": true,
+        "data_suffix_rate": 1000,
+        "gravity_45_degree_x": -4.9000,
+        "gravity_45_degree_y": 4.9000,
+        "gravity_45_degree_z": 6.9340,
+        "gravity_45_degree_tolerance": 0.71,
+        "gravity_axial_limit": 1.5,
+        "is_auto_calibrate": false,
+        "autoTest": {
+          "support_calibrate": true
+        }
+      }
+    },
+    {
+      "showName": "Proximity_C",
+      "action": "com.mmigroup.action.PROXIMITY_XM",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "distance_tolerance": 0.5,
+        "rawData": {
+          "min": 0,
+          "max": 5000
+        },
+        "do_calibration": {
+          "support": true,
+          "3_cm_minus_no_cover_min": 100,
+          "calibration_scheme": "oppo_mtk",
+          "3_cm": {
+            "min": 0,
+            "max": 5500
+          },
+          "noCover": {
+            "min": 0,
+            "max": 5000
+          },
+          "3_cm_offset": {
+            "min": 100,
+            "max": 1000
+          }
+        }
+      }
+    },
+    {
+      "showName": "Magnetic",
+      "action": "com.mmigroup.action.MAGNETIC",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "magnetism_tolerance": 30.0
+      }
+    },
+    {
+      "showName": "OTG",
+      "action": "com.mmigroup.action.OTG",
+      "support": true,
+      "automatic": false
+    },
+    {
+      "showName": "Receiver",
+      "action": "com.mmigroup.action.audioloop.AUDIOPLAYER",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "volume_rate": 1.0,
+        "is_show_list": true,
+        "music_name": [
+          "female_voice_english",
+          "female_voice_chinese",
+          "cant_hear"
+        ],
+        "music_rawResource_name": [
+          "girlenglish",
+          "tone112"
+        ],
+        "audioConfig": [
+          "mmitest=on;outputdevice=receiver"
+        ]
+      }
+    },
+    {
+      "showName": "PlatSubCamera",
+      "action": "com.mmigroup.action.OppoCAMERA",
+      "support": true,
+      "automatic": false,
+      "support_autoTest_autopass": false,
+      "paramconfig": {
+        "cameraId": 2,
+        "support_cameraCheck": true
+      }
+    }
+  ]
+}

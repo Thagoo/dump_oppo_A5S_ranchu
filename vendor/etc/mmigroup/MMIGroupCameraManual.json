@@ -1,0 +1,35 @@
+{
+  "itemConfig": [
+    {
+      "showName": "FlashLightCali",
+      "action": "com.mmigroup.action.ThreeAppTest",
+      "support": true,
+      "automatic": false,
+      "paramconfig":{
+        "pkg":"com.mediatek.emcamera",
+        "cls":"com.mediatek.emcamera.Camera",
+        "auto_exit":true
+      }
+    },
+    {
+      "showName": "DualCameraCali",
+      "action": "com.mmigroup.action.ThreeAppTest",
+      "support": true,
+      "automatic": false,
+      "paramconfig":{
+        "pkg":"com.oppo.engineermode",
+        "cls":"com.westalgo.factorycamera.CameraActivity",
+        "auto_exit":true
+      }
+    },
+    {
+      "showName": "iliGetOtpTest",
+      "action": "com.mmigroup.action.TPOPENSHORT",
+      "support": false,
+      "automatic": false,
+      "paramconfig": {
+        "is_ili9881h_test":true
+      }
+    }
+  ]
+}
