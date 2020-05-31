@@ -1,0 +1,9 @@
+logo.bin
+odmdtbo.img
+md1img.img
+spmfw.img
+sspm.img
+tee.img
+lk.img
+scp.img
+preloader.img
